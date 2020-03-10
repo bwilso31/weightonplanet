@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.index-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.index-element {
+    padding: 15px 0 15px 0;
+}
+
+#site-head {
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 40px;
+    text-align: center;
+    animation: title-animation;
+    animation-duration: 3s;
+}
+
+#go-btn {
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 22px;
+    color: white;
+    background-color: #232323;
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    transition: 1s;
+}
+
+#go-btn:hover {
+    background-color: #38523c;
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.planet-row {
+    display: flex;
+    align-content: space-between;
+}
+
+.planet-img {
+    animation: planet-onload;
+    padding: 0 25px;
+    animation-duration: 2s;
+}
+
+.planet-img:hover {
+    width: 220px;
+    transition: 1s;
+}
+
+#p1 {
+    width: 200px;
+}
+
+#p2 {
+    width: 50px;
+}
+
+#p3 {
+    width: 60px;
+}
+
+@keyframes title-animation {
+    0% {color: black; font-size: 50px}
+    100% {color: white; font-size: 40px}
+}
+
+@keyframes planet-onload {
+    0% {width: 400px; left: 0; opacity: 0;}
+    100% {opacity: 100%;}
+}
